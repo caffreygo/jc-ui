@@ -4,20 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../dist/assets/entry.94d1c394.css">
+    <link rel="stylesheet" href="../../dist/assets/entry.94d1c394.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1>全局引入 Demo</h1>
+    <h1>全局引入 IIFE</h1>
     <div id="app"></div>
-    <script type="module">
-      import { createApp } from "vue/dist/vue.esm-bundler.js";
-      import JcUI, {
-        SFCButton,
-        JSXButton,
-        MyButton,
-      } from "../../dist/jc-ui.mjs";
 
+    <script src="../../node_modules/vue/dist/vue.global.js"></script>
+    <script src="../../dist/jc-ui.iife.js"></script>
+
+    <script>
+      const { createApp } = Vue;
       createApp({
         template: `
           <MyButton color="blue" round plain icon="search" >Hello</MyButton>

@@ -19,11 +19,11 @@ export default defineConfig({
   build: {
     rollupOptions,
     minify: false,
+    cssCodeSplit: true,
     lib: {
       entry: "./src/entry.ts",
       name: "JcUI",
       fileName: "jc-ui",
-      // 导出模块格式
       formats: ["es", "umd", "iife"],
     },
   },
