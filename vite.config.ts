@@ -4,6 +4,15 @@ import vueJsx from "@vitejs/plugin-vue-jsx";
 
 // https://vitejs.dev/config/
 
+const rollupOptions = {
+  external: ["vue", "vue-router"],
+  output: {
+    globals: {
+      vue: "Vue",
+    },
+  },
+};
+
 export default defineConfig({
   plugins: [
     vue(),
@@ -11,4 +20,15 @@ export default defineConfig({
       // options are passed on to @vue/babel-plugin-jsx
     }),
   ],
+  build: {
+    rollupOptions,
+    minify: false,
+    lib: {
+      entry: "./src/entry.ts",
+      name: "JcUI",
+      fileName: "jc-ui",
+      // 导出模块格式
+      formats: ["es", "umd", "iife"],
+    },
+  },
 });
