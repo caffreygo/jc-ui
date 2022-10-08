@@ -1,6 +1,12 @@
-import { createApp } from "vue";
+import { createApp } from "vue/dist/vue.esm-bundler.js";
+import JcUI from "./entry";
 
-// import SButton from "./button";
-import JSXButton from "./JSXButton";
-
-createApp(JSXButton).mount("#app");
+createApp({
+  template: `
+        <div>
+            <MyButton>普通按钮</MyButton>
+        </div>
+    `,
+})
+  .use(JcUI)
+  .mount("#app");
