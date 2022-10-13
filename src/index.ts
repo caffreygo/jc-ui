@@ -1,5 +1,5 @@
-import { createApp } from "vue/dist/vue.esm-bundler.js";
-import JcUI from "./entry";
+import { createApp } from 'vue/dist/vue.esm-bundler.js'
+import JcUI from './entry'
 
 createApp({
   template: `
@@ -13,4 +13,4 @@ createApp({
     `,
 })
   .use(JcUI)
-  .mount("#app");
+  .mount('#app')
