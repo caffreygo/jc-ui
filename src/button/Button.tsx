@@ -1,4 +1,4 @@
-import { defineComponent, PropType } from 'vue'
+import { defineComponent, PropType, h } from 'vue'
 import 'uno.css'
 
 export type ISize = 'small' | 'medium' | 'large'
