@@ -25,7 +25,7 @@ jobs:
         uses: primer/publish@3.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          IJERRYCHEN_NPM_TOKEN: ${{ secrets.IJERRYCHEN_NPM_TOKEN }}
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
         with:
           default_branch: 'publish'
           dir: './'
