@@ -1,6 +1,6 @@
 import DefaultTheme from "vitepress/theme";
-import JcUI from "../../../src/entry";
-import 'vitepress-theme-demoblock/theme/styles/index.css'
+import JcUI from "@ijerrychen/jc-ui/dist/jc-ui.mjs";
+import "vitepress-theme-demoblock/theme/styles/index.css";
 import Demo from "vitepress-theme-demoblock/components/Demo.vue";
 import DemoBlock from "vitepress-theme-demoblock/components/DemoBlock.vue";
 

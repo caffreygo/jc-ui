@@ -10,9 +10,6 @@
     "test:run": "vitest run",
     "lint": "eslint --fix --ext .ts,.tsx,.vue src",
     "format": "prettier --write \"src/**/*.(ts|tsx)\" \"src/**/*.vue\"",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs",
     "prepare": "husky install"
   },
   "keywords": [],
@@ -38,8 +35,6 @@
     "terser": "5.4.0",
     "typescript": "^4.8.4",
     "unocss": "0.45.28",
-    "vitepress": "0.22.4",
-    "vitepress-theme-demoblock": "1.4.2",
     "vitest": "0.21.1"
   },
   "dependencies": {
