@@ -1,0 +1,6 @@
+{
+  "include": ["./.vitepress/**/*.*", "./shims-vue.d.ts"],
+  "exclude": ["node_modules"],
+  "esModuleInterop": true,
+  "allowSyntheticDefaultImports": "true"
+}
