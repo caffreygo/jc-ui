@@ -9,7 +9,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "vite": "^3.1.8"
+  "devDependencies": {
+    "vite": "^3.1.8",
+    "husky": "^8.0.1",
+    "unocss": "0.45.28",
+    "@commitlint/cli": "17.0.2",
+    "@commitlint/config-conventional": "17.0.2"
   }
 }
